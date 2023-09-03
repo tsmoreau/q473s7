@@ -1,5 +1,6 @@
 import ThemeToggle from "../components/ThemeToggle";
 import Nav from "../components/Nav";
+import Footer from "../components/Footer";
 
 export default function IndexPage() {
   return (
@@ -10,6 +11,7 @@ export default function IndexPage() {
       <div className="w-full ">
         TEST
         </div>
+        <Footer />
     </main>
   );
 }

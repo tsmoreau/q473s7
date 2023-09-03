@@ -47,8 +47,9 @@ function Nav() {
         
         <a
             className=""
-            href="/"
+            href="/about/#goals"
           >
+            
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
             Our Goals
         </div>

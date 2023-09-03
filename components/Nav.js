@@ -12,7 +12,7 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className=" bg-brown-100 h-32 border-8 border-gray-100">
+      <nav className=" -mt-4 h-32">
         <div>
           <div class=" max-w-6xl mx-auto relative py-8 flex justify-between items-center">
             <a

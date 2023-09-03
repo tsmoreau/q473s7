@@ -43,7 +43,7 @@ Volunteer With Us        </div>
             href="/"
           >
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-  Materials Donations    </div>
+  Materials Donations & Partnerships    </div>
         </a>
         
        
