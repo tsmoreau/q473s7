@@ -4,17 +4,17 @@ import Footer from "../components/Footer";
 
 export default function AboutPage() {
   return (
-    <main className=" ">
+    <main className=" bg-green-400 w-screen">
       <div className=" mx-auto ">
         <Nav />
       </div>
 
       <div className="  flex flex-col pt-24 items-center   text-3xl lg:text-4xl ">
-    <span className="tracking-tighter   text-center text-5xl ">
+    <span className="tracking-tight   text-center text-5xl ">
       About Us
     </span>
 
-    <div className="tracking-tighter pt-12  w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 flex justify-center ">
+    <div className="tracking-tight pt-12  w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 flex justify-center ">
       Our Mission
     </div>
 
@@ -22,7 +22,7 @@ export default function AboutPage() {
      sgrdg
     </div>
 
-    <div id="goals" className="tracking-tighter pt-12   flex justify-center ">
+    <div id="goals" className="tracking-tight pt-12   flex justify-center ">
       Our Goals
     </div>
 
@@ -31,7 +31,7 @@ export default function AboutPage() {
     </div>
 
 
-    <div className="w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 tracking-tighter pt-12  flex justify-center ">
+    <div className="w-11/12 md:w-10/12 lg:w-8/12 xl:w-6/12 tracking-tight pt-12  flex justify-center ">
       Our Staff
     </div>
 
@@ -44,7 +44,7 @@ export default function AboutPage() {
       </div>
     </div>
 
-    <div className="tracking-tighter pt-12   flex justify-center ">
+    <div className="tracking-tight pt-12   flex justify-center ">
     Our Board
     </div>
 
@@ -57,7 +57,7 @@ export default function AboutPage() {
       </div>
     </div>
 
-    <div className="tracking-tighter pt-12   flex justify-center ">
+    <div className="tracking-tight pt-12   flex justify-center ">
     Our Partners & Sponsors
     </div>
 

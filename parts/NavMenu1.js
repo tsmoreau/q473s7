@@ -7,7 +7,7 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="relative flex flex-row text-md  hover:text-gray-400 ">
+    <Menu.Button class="relative flex flex-row text-base tracking-tight hover:text-gray-400 ">
        About Us
       <div className=" pl-1 w-5 h-5">
         <svg
@@ -16,7 +16,7 @@ function Nav() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-5 h-5"
         >
           <path
             strokeLinecap="round"

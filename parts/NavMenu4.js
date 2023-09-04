@@ -6,7 +6,7 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="relative flex flex-row text-md  hover:text-gray-400 ">
+    <Menu.Button class="relative flex flex-row text-base tracking-tight hover:text-gray-400 ">
       Resource Hub
       <div className=" pl-1 w-5 h-5">
         <svg
@@ -15,7 +15,7 @@ function Nav() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-5 h-5"
         >
           <path
             strokeLinecap="round"
@@ -29,10 +29,10 @@ function Nav() {
       <div className="filter drop-shadow-lg bg-gray-100 z-30 absolute transform   px-4  p-2 rounded-md flex flex-col text-sm w-max">
         <a
             className=""
-            href="/"
+            href="/info"
           >
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-Curriculum & Programs       </div>
+Programs, Curriculum & More       </div>
         </a>
          <a
             className=""
@@ -47,7 +47,7 @@ Curriculum & Programs       </div>
       
           <a
             className=""
-            href="/"
+            href="/faq"
           >
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
         FAQ       </div>

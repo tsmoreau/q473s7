@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Menu } from "@headlessui/react";
 import ThemeToggle from "./ThemeToggle";
+import TextSlider from "./MainTextSlider";
 import Nav1 from "../parts/NavMenu1";
 import Nav2 from "../parts/NavMenu2";
 import Nav3 from "../parts/NavMenu3";
@@ -12,22 +13,27 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className=" -mt-4 h-32">
+      <nav className="bg-th-background transition-colors duration-300  h-24">
         <div>
-          <div class=" max-w-6xl mx-auto relative py-8 flex justify-between items-center">
+          <div class=" max-w-6xl mx-auto relative  flex justify-between pt-2.5 items-center">
             <a
               href="/"
               className="flex flex-col text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
             >
-              <h1 className="lg:ml-2 ml-6 text-5xl Avenir tracking-tighter md:text-5x1 lg:text-5xl">
-                upcycle.us
+              <h1 className="lg:ml-2 ml-2 text-5xl Avenir tracking-tighter md:text-5x1 lg:text-5xl">
+                insight/makers
               </h1>
-<h3 className="lg:ml-12 ml-16 transform -translate-y-21 text-xl Avenir tracking-tighter md:text-xl lg:text-xl">
-                we build creativity
+            <div className="flex">
+<h3 className="lg:ml-32 ml-32 transform -translate-y-21 -mt-1 text-base Avenir tracking-tighter ">
+                we build 
               </h3>
+              <div className=" text-base ml-1 -mt-1 tracking-tighter">
+              <TextSlider />
+              </div>
+</div>
             </a>
 
-            <ul class=" hidden absolute top-1/2 right-10 transform -translate-y-1/2  lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <ul class=" hidden absolute mt-3 right-10 md:right-5 lg:right-5 xl:right-10 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
               <li>
             <Nav1 />
               </li>
@@ -45,7 +51,6 @@ function Nav() {
             <div class="lg:hidden flex ">
               <div className="mr-2 mt-2.5">
                 {" "}
-                <ThemeToggle />
               </div>
 
               <button
@@ -94,9 +99,18 @@ aria-hidden="true"
               </button>
             </div>
           </div>
+     
         </div>
 
-        <Transition show={isOpen}>
+        <Transition 
+        show={isOpen}
+         enter="transition-opacity duration-200"
+        enterFrom="opacity-0"
+        enterTo="opacity-100"
+        leave="transition-opacity duration-200"
+        leaveFrom="opacity-100"
+        leaveTo="opacity-0"
+        >
           {(ref) => (
             <div class="relative z-50">
               <div class="fixed inset-0 bg-gray-800 opacity-25"></div>
@@ -141,19 +155,21 @@ className="w-6 h-6"
                     </li>
                     <li class="mb-1">
                      <Nav2 />
+                    
                     </li>
-                    <li class="mb-1">
-                      <a
-                        class="block mb-6 p-4 text-sm  text-gray-500 hover:bg-blue-50 hover:text-blue-600 rounded"
-                        href="/faq"
-                      >
-                        Our Impact
-                      </a>
-                    </li>
+                    
+                    <li>
+                      
+               
+                      </li>
                   </ul>
                 </div>
                 <div class="mt-auto">
                   <p class="my-4 text-xs text-center text-gray-400">
+                    <div class="mb-1 flex justify-center mx-auto w-full ">
+                     
+                       <ThemeToggle />
+                    </div>
                     <span>Copyright © 2021</span>
                   </p>
                 </div>
@@ -162,6 +178,8 @@ className="w-6 h-6"
           )}
         </Transition>
       </nav>
+
+     
     </div>
   );
 }

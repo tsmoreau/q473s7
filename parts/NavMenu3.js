@@ -6,8 +6,8 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="relative flex flex-row text-md  hover:text-gray-400 ">
-      Upcycle With Us
+    <Menu.Button class="relative flex flex-row text-base tracking-tight hover:text-gray-400 ">
+      Make With Us
       <div className=" pl-1 w-5 h-5">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -15,7 +15,7 @@ function Nav() {
           viewBox="0 0 24 24"
           strokeWidth={1.5}
           stroke="currentColor"
-          className="w-6 h-6"
+          className="w-5 h-5"
         >
           <path
             strokeLinecap="round"
@@ -32,15 +32,11 @@ function Nav() {
             href="/"
           >
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-Maker Classes & Events         </div>
+Maker Events, Classes & Kits      </div>
         </a>
-         <a
-            className=""
-            href="/"
-          >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-         Maker Project Kits    </div>
-        </a>
+
+        
+        
         
       
           <a
@@ -57,17 +53,11 @@ Maker Classes & Events         </div>
             href="/"
           >
         <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-        Events for Schools & Teachers 
+        Events for Schools, Businesses & More
                 </div>
         </a>
 
-          <a
-            className=""
-            href="/"
-          >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
-        Corporate Events    </div>
-        </a>
+         
         </div>
     </Menu.Items>
   </Menu>
