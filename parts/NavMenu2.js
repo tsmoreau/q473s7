@@ -6,33 +6,18 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="relative flex flex-row text-base tracking-tight hover:text-gray-400 ">
+    <Menu.Button class="font-medium relative flex flex-row text-base tracking-tight hover:text-slate-300 ">
       What We Do
-      <div className=" pl-1 w-5 h-5">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
+     
     </Menu.Button>
     <Menu.Items >
-      <div className="filter drop-shadow-lg bg-gray-100 z-30 absolute transform   px-4  p-2 rounded-md flex flex-col text-sm w-max">
+      <div className="font-medium filter drop-shadow-lg bg-gray-100 z-30 absolute -left-16 transform   px-4  p-2 rounded-md flex flex-col text-sm w-max">
       
       <a
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200">
        Maker & Trade Skills Education     </div>
         </a>
 
@@ -40,7 +25,7 @@ function Nav() {
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200">
       
       STEM & Sustainability Education
          </div>
@@ -51,7 +36,7 @@ function Nav() {
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200">
         Plastics Recycling & Production   </div>
         </a>
         
@@ -59,7 +44,7 @@ function Nav() {
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200">
 Social Equity Advocacy      </div>
         </a>
          

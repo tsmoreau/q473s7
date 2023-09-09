@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { Transition } from "@headlessui/react";
 import { Menu } from "@headlessui/react";
 import { BiMoon, BiSun, BiScatterChart } from "react-icons/bi";
@@ -7,32 +7,26 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="relative flex flex-row text-base tracking-tight hover:text-gray-400 ">
+    <Menu.Button class="font-semibold relative flex flex-row text-base tracking-tight hover:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
        About Us
-      <div className=" pl-1 w-5 h-5">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          strokeWidth={1.5}
-          stroke="currentColor"
-          className="w-5 h-5"
-        >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-          />
-        </svg>
-      </div>
+      
     </Menu.Button>
+    <Transition
+          as={Fragment}
+          enter="transition ease-out duration-100"
+          enterFrom="transform opacity-0 scale-95"
+          enterTo="transform opacity-100 scale-100"
+          leave="transition ease-in duration-75"
+          leaveFrom="transform opacity-100 scale-100"
+          leaveTo="transform opacity-0 scale-95"
+        >
     <Menu.Items >
-      <div className="filter drop-shadow-lg bg-gray-100 z-30 absolute transform   px-4  p-2 rounded-md flex flex-col text-sm w-max">
+      <div className="text-black font-medium filter drop-shadow-lg bg-white z-30 absolute -left-32 transform    p-2 rounded flex flex-col text-sm w-max">
         <a
             className=""
             href="/about"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200">
             Staff & Board
         </div>
         </a>
@@ -40,7 +34,7 @@ function Nav() {
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md hover:bg-slate-200 ">
             Our Mission
         </div>
         </a>
@@ -50,7 +44,7 @@ function Nav() {
             href="/about/#goals"
           >
             
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md hover:bg-slate-200 ">
             Our Goals
         </div>
         </a>
@@ -59,13 +53,14 @@ function Nav() {
             className=""
             href="/"
           >
-        <div className="px-1 py-0.5 rounded-md text-gray-800 hover:bg-gray-300 ">
+        <div className="px-2.5 py-1.5 rounded-md  hover:bg-slate-200 ">
             Our Partners & Sponsors
         </div>
         </a>
         
         </div>
     </Menu.Items>
+    </Transition>
   </Menu>
 
 );

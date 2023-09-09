@@ -64,28 +64,24 @@ const ThemeChanger = () => {
         tabIndex={0}
         onKeyDown={handleKeyDown}
         onClick={handleClick}
-        className={`cursor-pointer w-11 h-5 bg-th-primary-medium rounded-full relative px-1.5 flex items-center${
+        className={`cursor-pointer w-6 h-6 rounded-full relative px-1.5 flex items-center${
           isOn ? "" : " justify-end"
         }`}
       >
-        <div
-          className={`w-4 h-4 rounded-full absolute transform duration-200 ease-out bg-white left-0.5 ${
-            isOn ? "translate-x-6" : "translate-x-0"
-          }`}
-        />
+        
         {isOn ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-3 w-3 text-white"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-          </svg>
+         <svg
+         xmlns="http://www.w3.org/2000/svg"
+         className="h-3 w-3 text-white"
+         viewBox="0 0 20 20"
+         fill="currentColor"
+       >
+         <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+       </svg>
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-3 w-3 text-white"
+            className="h-3 w-3 text-black"
             viewBox="0 0 20 20"
             fill="currentColor"
           >

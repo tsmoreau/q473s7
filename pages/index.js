@@ -5,21 +5,21 @@ import Footer from "../components/Footer";
 export default function IndexPage() {
   return (
     <main className>
-      <div className=" mx-auto">
+      <div className="bg-th-background-secondary transition-colors duration-300 mx-auto">
         <Nav />
       </div>
       <div className="w-full ">
     
-<section class="overflow-hidden bg-gray-50 sm:grid sm:grid-cols-2">
-  <div class="p-8 md:p-12 lg:px-16 lg:py-24">
+<section class=" bg-th-background-secondary transition-colors duration-300">
+  <div class="p-8 md:p-12 lg:px-16 lg:py-48 pb-36">
     <div
       class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right"
     >
-      <h2 class="text-2xl font-bold text-gray-900 md:text-3xl">
+      <h2 class="text-2xl font-bold  md:text-3xl bg-th-background">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit
       </h2>
 
-      <p class="hidden text-gray-500 md:mt-4 md:block">
+      <p class="hidden  md:mt-4 md:block">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas
         tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et
         fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt
@@ -29,7 +29,7 @@ export default function IndexPage() {
       <div class="mt-4 md:mt-8">
         <a
           href="#"
-          class="inline-block rounded bg-emerald-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-emerald-700 focus:outline-none focus:ring focus:ring-yellow-400"
+          class="inline-block rounded bg-tangerine px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
         >
           Get Started Today
         </a>
@@ -37,14 +37,11 @@ export default function IndexPage() {
     </div>
   </div>
 
-  <img
-    alt="Student"
-    src="https://images.unsplash.com/photo-1464582883107-8adf2dca8a9f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-    class="h-56 w-full object-cover sm:h-full"
-  />
 </section>
-<section>
-  <div class="mx-auto max-w-screen-2xl px-4 py-16 sm:px-6 lg:px-8">
+
+
+<section className="w-full bg-th-primary-medium">
+  <div class="bg-th-primary-medium mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
       <div class="relative z-10 lg:py-16">
         <div class="relative h-64 sm:h-80 lg:h-full">
@@ -56,9 +53,9 @@ export default function IndexPage() {
         </div>
       </div>
 
-      <div class="relative flex items-center bg-gray-100">
+      <div class="bg-th-primary-medium relative flex items-center">
         <span
-          class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 lg:bg-gray-100"
+          class="hidden lg:absolute lg:inset-y-0 lg:-start-16 lg:block lg:w-16 "
         ></span>
 
         <div class="p-8 sm:p-16 lg:p-24">
@@ -67,7 +64,7 @@ export default function IndexPage() {
             debitis.
           </h2>
 
-          <p class="mt-4 text-gray-600">
+          <p class="mt-4">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid,
             molestiae! Quidem est esse numquam odio deleniti, beatae, magni
             dolores provident quaerat totam eos, aperiam architecto eius quis
@@ -76,7 +73,7 @@ export default function IndexPage() {
 
           <a
             href="#"
-            class="mt-8 inline-block rounded border border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+            class="mt-8 inline-block rounded border bg-yale_blue-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
           >
             Get in Touch
           </a>
@@ -85,16 +82,16 @@ export default function IndexPage() {
     </div>
   </div>
 </section>
-<section>
-  <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
-    <div class="max-w-3xl">
+<section className="bg-th-primary-medium">
+  <div class="bg-th-primary-medium mx-auto max-w-5xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
+    <div class="bg-th-primary-medium max-w-3xl">
       <h2 class="text-3xl font-bold sm:text-4xl">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quod alias
         doloribus impedit.
       </h2>
     </div>
 
-    <div class="mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
+    <div class="bg-th-primary-medium mt-8 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
       <div class="relative h-64 overflow-hidden sm:h-80 lg:h-full">
         <img
           alt="Party"
@@ -104,7 +101,7 @@ export default function IndexPage() {
       </div>
 
       <div class="lg:py-16">
-        <article class="space-y-4 text-gray-600">
+        <article class="space-y-4 ">
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut qui
             hic atque tenetur quis eius quos ea neque sunt, accusantium soluta

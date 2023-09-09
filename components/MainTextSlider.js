@@ -43,7 +43,7 @@ export default function Footer() {
     useEffect(() => {
       const interval = setInterval(() => {
         setIndex(Math.floor(Math.random() * texts.length));
-      }, 2 * 1000);
+      }, 4 * 1000);
     
       return () => clearInterval(interval);
     }, [randomIndex]);

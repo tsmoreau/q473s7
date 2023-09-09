@@ -5,6 +5,11 @@ module.exports = {
   darkMode: "class",
  theme: {
         extend: {
+          animation: {
+            'gradient-x':'gradient-x 15s ease infinite',
+            'gradient-y':'gradient-y 15s ease infinite',
+            'gradient-xy':'gradient-xy 15s ease infinite',
+        },
            keyframes: {
         wave: {
           '0%': { transform: 'rotate(0.0deg)' },
@@ -16,6 +21,40 @@ module.exports = {
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
         },
+      
+      
+          'gradient-y': {
+              '0%, 100%': {
+                  'background-size':'400% 400%',
+                  'background-position': 'center top'
+              },
+              '50%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'center center'
+              }
+          },
+          'gradient-x': {
+              '0%, 100%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'left center'
+              },
+              '50%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'right center'
+              }
+          },
+          'gradient-xy': {
+              '0%, 100%': {
+                  'background-size':'400% 400%',
+                  'background-position': 'left center'
+              },
+              '50%': {
+                  'background-size':'200% 200%',
+                  'background-position': 'right center'
+              }
+          }
+      
+        
       },
             colors: {
                 transparent: 'transparent',
@@ -37,7 +76,7 @@ module.exports = {
                 richblue: "#068DA9",
                 darkblue: "#023047",
                 chedder: "#FFB703",
-                tangerine: "#FB8500",
+                tangerine: "#f9bc60",
                 darkgray: "#2a2a2c",
                 darkergray: "#1c1b1b",
 

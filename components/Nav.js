@@ -13,27 +13,27 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-th-background transition-colors duration-300  h-24">
+      <nav className="bg-th-background transition-colors duration-300  h-28">
         <div>
-          <div class=" max-w-6xl mx-auto relative  flex justify-between pt-2.5 items-center">
+          <div class=" max-w-5xl mx-auto relative  flex justify-between pt-12 items-center">
             <a
               href="/"
               className="flex flex-col text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
             >
-              <h1 className="lg:ml-2 ml-2 text-5xl Avenir tracking-tighter md:text-5x1 lg:text-5xl">
-                insight/makers
+              <h1 className="lg:ml-12 ml-12 text-4xl Avenir tracking-tight md:text-5x1 lg:text-4xl">
+                insight makers
               </h1>
             <div className="flex">
-<h3 className="lg:ml-32 ml-32 transform -translate-y-21 -mt-1 text-base Avenir tracking-tighter ">
+<h3 className="lg:ml-10 ml-10 transform pl-2 -mt-2 text-base Avenir tracking-tight ">
                 we build 
               </h3>
-              <div className=" text-base ml-1 -mt-1 tracking-tighter">
+              <div className=" text-base ml-1 -mt-2 tracking-tighter">
               <TextSlider />
               </div>
 </div>
             </a>
 
-            <ul class=" hidden absolute mt-3 right-10 md:right-5 lg:right-5 xl:right-10 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto lg:space-x-6">
+            <ul class=" hidden absolute mt-3 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-3">
               <li>
             <Nav1 />
               </li>
@@ -41,22 +41,20 @@ function Nav() {
               <Nav2 />
               </li>
               <li><Nav3 /></li>
-              <li><Nav4 /></li>
-              <li class="relative"><Nav5 /></li>
               <li>
                 <ThemeToggle />
               </li>
             </ul>
             <div class="hidden absolute top-1/2 -right-10 px-2 transform -translate-y-1/2 -translate-x-1/4 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto "></div>
             <div class="lg:hidden flex ">
-              <div className="mr-2 mt-2.5">
+              <div className="mr-2 mt-3">
                 {" "}
               </div>
 
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="mr-8 inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                className="mr-8 inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white pt-4"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
@@ -180,6 +178,7 @@ className="w-6 h-6"
       </nav>
 
      
+
     </div>
   );
 }
