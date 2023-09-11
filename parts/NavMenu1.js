@@ -7,16 +7,16 @@ function Nav() {
   
     return (
     <Menu>
-    <Menu.Button class="font-semibold relative flex flex-row text-base tracking-tight hover:text-slate-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+    <Menu.Button class="text-th-accent-dark font-semibold relative flex flex-row text-base  hover:text-slate-500 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
        About Us
       
     </Menu.Button>
     <Transition
           as={Fragment}
-          enter="transition ease-out duration-100"
+          enter="transition ease-out duration-200"
           enterFrom="transform opacity-0 scale-95"
           enterTo="transform opacity-100 scale-100"
-          leave="transition ease-in duration-75"
+          leave="transition ease-in duration-200"
           leaveFrom="transform opacity-100 scale-100"
           leaveTo="transform opacity-0 scale-95"
         >

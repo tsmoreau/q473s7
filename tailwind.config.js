@@ -77,8 +77,10 @@ module.exports = {
                 darkblue: "#023047",
                 chedder: "#FFB703",
                 tangerine: "#f9bc60",
-                darkgray: "#2a2a2c",
+                darkgray: "#020826",
                 darkergray: "#1c1b1b",
+                darkgreen: "#004643",
+                tan: "#f9f4ef",
 
  yale_blue: { DEFAULT: '#0d3b66', 100: '#030c15', 200: '#05182a', 300: '#08243e', 400: '#0b3053', 500: '#0d3b66', 600: '#1764ad', 700: '#2e8ce4', 800: '#74b2ed', 900: '#b9d9f6' },
  lemon_chiffon: { DEFAULT: '#faf0ca', 100: '#534408', 200: '#a6880f', 300: '#ebc326', 400: '#f3da79', 500: '#faf0ca', 600: '#fbf4d6', 700: '#fcf7e0', 800: '#fdf9ea', 900: '#fefcf5' },

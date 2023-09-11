@@ -5,26 +5,26 @@
 
 
 [data-theme="light"] {
-  --background: theme("colors.stone.100");
-  --background-secondary: theme("colors.stone.100");
+  --background: theme("colors.browny.400");
+  --background-secondary: theme("colors.browny.400");
 
-  --accent-dark: theme("colors.naples_yellow.500"); /* Bottom Bar */ 
+  --accent-dark: theme("colors.darkgray"); /* Bottom Bar */ 
   --accent-medium: theme("colors.yale_blue.500"); /* Middle Bar */ 
-  --accent-light: theme("colors.sandy_brown.700");
+  --accent-light: theme("colors.slate.800");
 
   --primary-dark: theme("colors.tomato.300");
-  --primary-medium: theme("colors.naples_yellow.700");  /* Top Bar * Switch */ 
-  --primary-light: theme("colors.tomato.900");
+  --primary-medium: theme("colors.tomato.300");  /* Top Bar * Switch */ 
+  --primary-light: theme("colors.darkgreen");
 }
 
 
 [data-theme="dark"] {
-  --background: theme("colors.yale_blue.500");
-  --background-secondary: theme("colors.yale_blue.500");
+  --background: theme("colors.darkgreen");
+  --background-secondary: theme("colors.darkgreen");
 
-  --accent-dark: theme("colors.tomato.300");  /* Bottom Bar */ 
+  --accent-dark: theme("colors.tan");  /* Bottom Bar */ 
   --accent-medium: theme("colors.richblue"); /* Middle Bar */ 
-  --accent-light: theme("colors.sea_green.100");
+  --accent-light: theme("colors.tan");
 
   --primary-dark: theme("colors.emerald.800");
   --primary-medium: theme("colors.yale_blue.600"); /* Top Bar & Switch */ 

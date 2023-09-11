@@ -13,27 +13,34 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div>
-      <nav className="bg-th-background transition-colors duration-300  h-28">
+      <nav className="transparent  h-28">
         <div>
-          <div class=" max-w-5xl mx-auto relative  flex justify-between pt-12 items-center">
+        
+          <div class=" max-w-5xl mx-auto relative  flex justify-between pt-10 items-center">
+            
+            
             <a
               href="/"
-              className="flex flex-col text-lg font-semibold rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
+              className="flex text-lg font-semibold rounded-lg tracking-wide focus:outline-none focus:shadow-outline"
             >
-              <h1 className="lg:ml-12 ml-12 text-4xl Avenir tracking-tight md:text-5x1 lg:text-4xl">
-                insight makers
+              <img src="/an.png" className=" h-16 w-16"/>
+              <div className="">
+              <h1 className="mt-6 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
+                Insight Makers
               </h1>
-            <div className="flex">
-<h3 className="lg:ml-10 ml-10 transform pl-2 -mt-2 text-base Avenir tracking-tight ">
+            <div className="flex hidden">
+<h3 className=" transform -mt-2 text-base Avenir tracking-tight ">
                 we build 
               </h3>
               <div className=" text-base ml-1 -mt-2 tracking-tighter">
               <TextSlider />
               </div>
+              </div>
+              
 </div>
             </a>
 
-            <ul class=" hidden absolute mt-3 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-3">
+            <ul class=" hidden absolute mt-5 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
               <li>
             <Nav1 />
               </li>
