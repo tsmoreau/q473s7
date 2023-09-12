@@ -4,7 +4,9 @@ import { Menu } from "@headlessui/react";
 import ThemeToggle from "./ThemeToggle";
 import TextSlider from "./MainTextSlider";
 import Nav1 from "../parts/NavMenu1";
+import Nav1a from "../parts/NavMenu1a";
 import Nav2 from "../parts/NavMenu2";
+import Nav2a from "../parts/NavMenu2a";
 import Nav3 from "../parts/NavMenu3";
 import Nav4 from "../parts/NavMenu4";
 import Nav5 from "../parts/NavMenu5";
@@ -20,16 +22,35 @@ function Nav() {
               href="/"
               className="flex text-lg font-semibold rounded-lg tracking-wide focus:outline-none focus:shadow-outline"
             >
-              <img src="/an.png" className=" h-16 w-16" />
+              <div className="transform translate-y-2 ml-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 1224 1116"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16"
+                >
+                  <g fill="none" stroke="currentColor" strokeWidth="35">
+                    <path d="M271.12 557.36c0-188.26 152.62-340.88 340.88-340.88S952.88 369.1 952.88 557.36 800.26 898.24 612 898.24 271.12 745.62 271.12 557.36z"></path>
+                    <path d="M417.21 558c0-107.58 87.209-194.79 194.79-194.79S806.79 450.419 806.79 558 719.581 752.79 612 752.79 417.21 665.581 417.21 558zM447.02 258.64s25.907-42.147 86.274-179.53c15.195-34.582 151.28-31.51 164.74-2.55 65.043 139.94 78.954 182.82 78.954 182.82M776.98 857.36s-25.907 42.147-86.274 179.54c-15.195 34.58-151.28 31.51-164.74 2.55-65.043-139.94-78.954-182.82-78.954-182.82M911.36 393.02s42.147 25.907 179.54 86.274c34.58 15.195 31.51 151.28 2.55 164.74-139.94 65.043-182.82 78.954-182.82 78.954M312.64 722.98s-42.147-25.907-179.53-86.274c-34.582-15.195-31.511-151.28-2.551-164.74 139.94-65.043 182.82-78.954 182.82-78.954"></path>
+                    <path d="M245.28 420.38s11.841-292.26 52.67-291.75c40.83.507 54.217 208.08 54.217 208.08M979.53 420.38s-11.841-292.26-52.67-291.75-54.217 208.08-54.217 208.08"></path>
+                    <g>
+                      <path d="M244.88 689.88s11.841 292.26 52.67 291.75c40.83-.507 54.217-208.08 54.217-208.08M979.12 689.88s-11.841 292.26-52.67 291.75c-40.83-.507-54.217-208.08-54.217-208.08"></path>
+                    </g>
+                    <path d="M447.02 558C612 420.38 612.41 420.38 776.99 558c-164.58 131.88-164.98 131.88-329.97 0z"></path>
+                    <path d="M503.94 555.81c0-55.716 47.906-100.88 107-100.88s107 45.167 107 100.88c0 55.717-47.906 100.88-107 100.88s-107-45.167-107-100.88z"></path>
+                  </g>
+                </svg>
+              </div>
               <div className="">
-                <h1 className="hidden mt-6 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
-                  Insight Makers
+                <h1 className=" mt-6 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
+                  Insight|Makers
                 </h1>
-                <div className="flex hidden">
-                  <h3 className=" transform -mt-2 text-base Avenir tracking-tight ">
+                <div className="flex ">
+                  <h3 className=" transform -mt-2 text-sm Avenir tracking-tight ">
                     we build
                   </h3>
-                  <div className=" text-base ml-1 -mt-2 tracking-tighter">
+                  <div className=" text-sm ml-1 -mt-2 tracking-tighter">
                     <TextSlider />
                   </div>
                 </div>
@@ -38,15 +59,24 @@ function Nav() {
 
             <ul class=" hidden absolute mt-5 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
               <li>
+                <Nav1a />
+              </li>
+              <li className="hidden">
                 <Nav1 />
               </li>
               <li>
-                <Nav2 />
+                <Nav2a />
               </li>
               <li>
                 <Nav3 />
               </li>
-              <li className="hidden">
+              <li>
+                <Nav4 />
+              </li>
+              <li>
+                <Nav5 />
+              </li>
+              <li className="">
                 <ThemeToggle />
               </li>
             </ul>

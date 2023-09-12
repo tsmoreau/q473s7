@@ -19,7 +19,7 @@ function Nav() {
         leaveTo="transform opacity-0 scale-95"
       >
         <Menu.Items>
-          <div className="text-black font-medium filter drop-shadow-lg bg-white z-30 absolute -left-32 transform    p-2 rounded flex flex-col text-sm w-max">
+          <div className="text-black font-normal filter drop-shadow-lg bg-white z-30 absolute -left-32 transform    p-2 rounded flex flex-col text-sm w-max">
             <a className="" href="/about">
               <div className="px-2.5 py-1.5 rounded-md  hover:bg-stone-200">
                 Staff & Board

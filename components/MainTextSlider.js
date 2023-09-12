@@ -3,36 +3,41 @@ import { AnimatePresence, motion } from "framer-motion";
 import styled from "styled-components";
 
 export default function Footer() {
-  
-  const texts = ["community", "dignity", "curiosity",  "passion", "agency",];
+  const texts = [
+    "community",
+    "dignity",
+    "curiosity",
+    "passion",
+    "agency",
+    "connection",
+    "purpose",
+    "self-esteem",
+  ];
   const variants = {
     enter: (direction) => {
       return {
         y: 0,
-        opacity: 0
+        opacity: 0,
       };
     },
     center: {
       zIndex: 1,
       y: 0,
-      opacity: 1
+      opacity: 1,
     },
     exit: (direction) => {
       return {
         y: 0,
-        opacity: 0
+        opacity: 0,
       };
-    }
+    },
   };
-  
-  const LoopWrap = styled.div`
-    
-  `;
+
+  const LoopWrap = styled.div``;
 
   const TextLoop = () => {
     const [index, setIndex] = useState(0);
     const [randomIndex, setRandomIndex] = useState(0);
-  
 
     useEffect(() => {
       const randomIndex = Math.floor(Math.random() * texts.length);
@@ -44,13 +49,12 @@ export default function Footer() {
       const interval = setInterval(() => {
         setIndex(Math.floor(Math.random() * texts.length));
       }, 4 * 1000);
-    
+
       return () => clearInterval(interval);
     }, [randomIndex]);
-  
+
     return (
       <LoopWrap>
-       
         <AnimatePresence>
           <motion.span
             style={{ position: "absolute" }}
@@ -61,7 +65,7 @@ export default function Footer() {
             exit="exit"
             transition={{
               y: { type: "spring", stiffness: 200, damping: 10 },
-              opacity: { duration: 2 }
+              opacity: { duration: 2 },
             }}
           >
             {texts[index]}
@@ -70,9 +74,11 @@ export default function Footer() {
       </LoopWrap>
     );
   };
-  
-  
+
   return (
-    <div className=""> <TextLoop /></div>
+    <div className="">
+      {" "}
+      <TextLoop />
+    </div>
   );
 }
