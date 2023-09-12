@@ -2,31 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 [data-theme="light"] {
-  --background: theme("colors.browny.400");
-  --background-secondary: theme("colors.browny.400");
+  --background: theme("colors.tan");
+  --background-secondary: theme("colors.tan");
 
-  --accent-dark: theme("colors.darkgray"); /* Bottom Bar */ 
-  --accent-medium: theme("colors.yale_blue.500"); /* Middle Bar */ 
+  --accent-dark: theme("colors.darkgray"); /* Bottom Bar */
+  --accent-medium: theme("colors.yale_blue.500"); /* Middle Bar */
   --accent-light: theme("colors.slate.800");
 
-  --primary-dark: theme("colors.tomato.300");
-  --primary-medium: theme("colors.tomato.300");  /* Top Bar * Switch */ 
+  --primary-dark: theme("colors.yale_blue.800");
+  --primary-medium: theme("colors.lemon_chiffon.400"); /* Top Bar * Switch */
   --primary-light: theme("colors.darkgreen");
 }
-
 
 [data-theme="dark"] {
   --background: theme("colors.darkgreen");
   --background-secondary: theme("colors.darkgreen");
 
-  --accent-dark: theme("colors.tan");  /* Bottom Bar */ 
-  --accent-medium: theme("colors.richblue"); /* Middle Bar */ 
+  --accent-dark: theme("colors.tan"); /* Bottom Bar */
+  --accent-medium: theme("colors.richblue"); /* Middle Bar */
   --accent-light: theme("colors.tan");
 
   --primary-dark: theme("colors.emerald.800");
-  --primary-medium: theme("colors.yale_blue.600"); /* Top Bar & Switch */ 
+  --primary-medium: theme("colors.yale_blue.600"); /* Top Bar & Switch */
   --primary-light: theme("colors.emerald.200");
 }

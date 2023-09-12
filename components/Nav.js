@@ -12,109 +12,100 @@ import Nav5 from "../parts/NavMenu5";
 function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div>
-      <nav className="transparent  h-28">
+    <div className="fixed w-full z-50">
+      <nav className=" h-28">
         <div>
-        
-          <div class=" max-w-5xl mx-auto relative  flex justify-between pt-10 items-center">
-            
-            
+          <div class=" max-w-screen-lg mx-auto relative  flex justify-between pt-10 items-center">
             <a
               href="/"
               className="flex text-lg font-semibold rounded-lg tracking-wide focus:outline-none focus:shadow-outline"
             >
-              <img src="/an.png" className=" h-16 w-16"/>
+              <img src="/an.png" className=" h-16 w-16" />
               <div className="">
-              <h1 className="mt-6 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
-                Insight Makers
-              </h1>
-            <div className="flex hidden">
-<h3 className=" transform -mt-2 text-base Avenir tracking-tight ">
-                we build 
-              </h3>
-              <div className=" text-base ml-1 -mt-2 tracking-tighter">
-              <TextSlider />
+                <h1 className="hidden mt-6 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
+                  Insight Makers
+                </h1>
+                <div className="flex hidden">
+                  <h3 className=" transform -mt-2 text-base Avenir tracking-tight ">
+                    we build
+                  </h3>
+                  <div className=" text-base ml-1 -mt-2 tracking-tighter">
+                    <TextSlider />
+                  </div>
+                </div>
               </div>
-              </div>
-              
-</div>
             </a>
 
             <ul class=" hidden absolute mt-5 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
               <li>
-            <Nav1 />
+                <Nav1 />
               </li>
               <li>
-              <Nav2 />
+                <Nav2 />
               </li>
-              <li><Nav3 /></li>
               <li>
+                <Nav3 />
+              </li>
+              <li className="hidden">
                 <ThemeToggle />
               </li>
             </ul>
             <div class="hidden absolute top-1/2 -right-10 px-2 transform -translate-y-1/2 -translate-x-1/4 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto "></div>
             <div class="lg:hidden flex ">
-              <div className="mr-2 mt-3">
-                {" "}
-              </div>
+              <div className="mr-2 mt-3"> </div>
 
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="mr-8 inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white pt-4"
+                className="mr-8 inline-flex items-center justify-center p-2 rounded-md  hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white mt-4"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-fill="none"
-viewBox="0 0 24 24"
-strokeWidth={1}
-stroke="currentColor"
-className="w-6 h-6"
-> <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
-                
-</svg>
-
-                 
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                  >
+                    {" "}
+                    <path d="M24 19h-24v-1h24v1zm0-6h-24v-1h24v1zm0-6h-24v-1h24v1z" />
+                  </svg>
                 ) : (
-                 
-
-
-<svg
-xmlns="http://www.w3.org/2000/svg"
-fill="none"
-viewBox="0 0 0 0"
-strokeWidth={3}
-stroke="currentColor"
-className="w-6 h-6"
-aria-hidden="true"
->  <path
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 0 0"
+                    strokeWidth={3}
+                    stroke="currentColor"
+                    className="w-6 h-6"
+                    aria-hidden="true"
+                  >
+                    {" "}
+                    <path
                       strokeLinecap="round"
                       strokeLinejoin="round"
                       strokeWidth="1.5"
                       d="M6 18L18 6M6 6l12 12"
-                    />              
-</svg>
-                
+                    />
+                  </svg>
                 )}
               </button>
             </div>
           </div>
-     
         </div>
 
-        <Transition 
-        show={isOpen}
-         enter="transition-opacity duration-200"
-        enterFrom="opacity-0"
-        enterTo="opacity-100"
-        leave="transition-opacity duration-200"
-        leaveFrom="opacity-100"
-        leaveTo="opacity-0"
+        <Transition
+          show={isOpen}
+          enter="transition-opacity duration-200"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="transition-opacity duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
         >
           {(ref) => (
             <div class="relative z-50">
@@ -137,20 +128,21 @@ aria-hidden="true"
                     aria-expanded="false"
                   >
                     <svg
-xmlns="http://www.w3.org/2000/svg"
-fill="none"
-viewBox="0 0 24 24"
-strokeWidth={3}
-stroke="currentColor"
-className="w-6 h-6"
-
->  <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth="1.5"
-                      d="M6 18L18 6M6 6l12 12"
-                    />              
-</svg>
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth={3}
+                      stroke="currentColor"
+                      className="w-6 h-6"
+                    >
+                      {" "}
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="1.5"
+                        d="M6 18L18 6M6 6l12 12"
+                      />
+                    </svg>
                   </button>
                 </div>
                 <div>
@@ -159,21 +151,16 @@ className="w-6 h-6"
                       <Nav1 />
                     </li>
                     <li class="mb-1">
-                     <Nav2 />
-                    
+                      <Nav2 />
                     </li>
-                    
-                    <li>
-                      
-               
-                      </li>
+
+                    <li></li>
                   </ul>
                 </div>
                 <div class="mt-auto">
                   <p class="my-4 text-xs text-center text-gray-400">
                     <div class="mb-1 flex justify-center mx-auto w-full ">
-                     
-                       <ThemeToggle />
+                      <ThemeToggle />
                     </div>
                     <span>Copyright © 2021</span>
                   </p>
@@ -183,9 +170,6 @@ className="w-6 h-6"
           )}
         </Transition>
       </nav>
-
-     
-
     </div>
   );
 }
