@@ -12,23 +12,27 @@ export default function IndexPage() {
         <section class=" bg-th-background-secondary transition-colors duration-300">
           <div class="p-12 lg:px-16 py-48 pb-36">
             <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-              <h2 class="bg-gradient-to-br from-stone-100 to-black text-8xl font-bold font-roboto animate-text bg-th-background bg-clip-text text-transparent bg-clip-text text-transparent">
+              <h2 class="text-8xl font-bold font-roboto  bg-th-background text-stone-700">
                 Insight Makers{" "}
               </h2>
 
               <p class="hidden  md:mt-4 font-roboto md:block">
-                Maker, builder and hands-on materials learning for all ages!
+                Maker, Builder and Hands-on Materials learning for all ages!
               </p>
               <p class="hidden  md:mt-1 font-roboto md:block">
                 We offer Maker Kits using Recycled Materials, Maker Classes for
-                local Libraries & Schools, and Events for Organizations of all
-                kinds.
+                local Libraries & Schools, and Maker Events for Organizations of
+                all kinds.
+              </p>
+              <p class="hidden  md:mt-1 font-roboto md:block">
+                In addition we provide Adult Education in Home Maintenance and
+                Trade Skills, and
               </p>
 
               <div class="mt-4 md:mt-8">
                 <a
                   href="#"
-                  class="inline-block rounded bg-tangerine px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
+                  class="inline-block rounded bg-tomato-300 px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Build With Us
                 </a>

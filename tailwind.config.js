@@ -190,6 +190,7 @@ module.exports = {
         "th-accent-dark": "var(--accent-dark)",
         "th-accent-medium": "var(--accent-medium)",
         "th-accent-light": "var(--accent-light)",
+        ...colors,
       },
     },
   },

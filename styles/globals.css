@@ -11,7 +11,7 @@
   --accent-light: theme("colors.slate.800");
 
   --primary-dark: theme("colors.yale_blue.800");
-  --primary-medium: theme("colors.lemon_chiffon.400"); /* Top Bar * Switch */
+  --primary-medium: theme("colors.browny.600"); /* Top Bar * Switch */
   --primary-light: theme("colors.darkgreen");
 }
 

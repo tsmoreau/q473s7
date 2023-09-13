@@ -70,10 +70,10 @@ function Nav() {
               <li>
                 <Nav3 />
               </li>
-              <li>
+              <li className="hidden">
                 <Nav4 />
               </li>
-              <li>
+              <li className="hidden">
                 <Nav5 />
               </li>
               <li className="">
