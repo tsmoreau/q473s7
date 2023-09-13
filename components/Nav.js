@@ -8,6 +8,7 @@ import Nav1a from "../parts/NavMenu1a";
 import Nav2 from "../parts/NavMenu2";
 import Nav2a from "../parts/NavMenu2a";
 import Nav3 from "../parts/NavMenu3";
+import Nav3a from "../parts/NavMenu3a";
 import Nav4 from "../parts/NavMenu4";
 import Nav5 from "../parts/NavMenu5";
 
@@ -68,7 +69,7 @@ function Nav() {
                 <Nav2a />
               </li>
               <li>
-                <Nav3 />
+                <Nav3a />
               </li>
               <li className="hidden">
                 <Nav4 />
@@ -139,21 +140,21 @@ function Nav() {
         >
           {(ref) => (
             <div class="relative z-50">
-              <div class="fixed inset-0 bg-gray-800 opacity-25"></div>
-              <div class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm pt-4 pr-4 pl-4 bg-white border-r overflow-y-auto">
+              <div class="fixed inset-0 bg-th-background opacity-25"></div>
+              <div class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-r overflow-y-auto">
                 <div class="flex justify-between mb-6 mx-2">
                   <a
                     href="/"
-                    className="text-lg font-normal rounded-lg tracking-widest focus:outline-none focus:shadow-outline"
+                    className="text-lg font-normal rounded-lg  focus:outline-none focus:shadow-outline"
                   >
-                    <h1 className="text-4xl font-semibold Avenir tracking-tighter text-gray-900 md:text-3x1 lg:text-4xl">
-                      upcycle us
+                    <h1 className="text-4xl font-semibold text-gray-900 md:text-3x1 lg:text-4xl">
+                      Insight|Makers
                     </h1>
                   </a>
                   <button
                     onClick={() => setIsOpen(!isOpen)}
                     type="button"
-                    className="bg-white inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                    className="bg-th-background inline-flex items-center justify-center p-2 rounded-md text-gray-400  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                     aria-controls="mobile-menu"
                     aria-expanded="false"
                   >
@@ -178,13 +179,15 @@ function Nav() {
                 <div>
                   <ul className="mx-2">
                     <li class="mb-1">
-                      <Nav1 />
+                      <Nav1a />
                     </li>
                     <li class="mb-1">
-                      <Nav2 />
+                      <Nav2a />
                     </li>
 
-                    <li></li>
+                    <li class="mb-1">
+                      <Nav3a />
+                    </li>
                   </ul>
                 </div>
                 <div class="mt-auto">
