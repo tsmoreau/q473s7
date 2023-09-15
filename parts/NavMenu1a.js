@@ -64,7 +64,7 @@ export default function Example() {
                   onMouseEnter={onMouseEnter.bind(null, open)}
                   onMouseLeave={onMouseLeave.bind(null, open)}
                 >
-                  <span>About Us</span>
+                  <span className="">About Us</span>
                 </Popover.Button>
                 <Transition
                   as={Fragment}
@@ -77,19 +77,19 @@ export default function Example() {
                 >
                   <Popover.Panel className="absolute z-10 w-max px-4 mt-0 transform -translate-x-1/2 left-1/2 sm:px-0">
                     <div
-                      className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
+                      className="overflow-hidden rounded-lg shadow-xl shadow-white  "
                       onMouseEnter={onMouseEnter.bind(null, open)}
                       onMouseLeave={onMouseLeave.bind(null, open)}
                     >
-                      <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-1">
+                      <div className="relative grid gap-8 bg-th-primary-medium p-7 lg:grid-cols-1">
                         {solutions.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
-                            className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                            className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-th-primary-dark focus:outline-none "
                           >
                             <div className="mx-4">
-                              <p className="text-sm font-medium text-gray-900">
+                              <p className="text-sm font-medium ">
                                 {item.name}
                               </p>
                             </div>

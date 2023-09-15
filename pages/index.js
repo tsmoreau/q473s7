@@ -1,42 +1,88 @@
 import ThemeToggle from "../components/ThemeToggle";
 import Nav from "../components/Nav";
 import Footer from "../components/Footer";
+import SVG1 from "../parts/SVG1";
+import { motion } from "framer-motion";
 
 export default function IndexPage() {
+  const variants = {
+    hidden: {
+      opacity: 0,
+      y: "100vw",
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        duration: 2,
+      },
+    },
+  };
+
   return (
-    <main className>
+    <main className="bg-th-background">
       <div className="bg-th-background-secondary font-roboto transition-colors duration-300 mx-auto">
         <Nav />
       </div>
+
       <div className="w-full ">
         <section class=" bg-th-background-secondary transition-colors duration-300">
           <div class="p-12 lg:px-16 py-48 pb-36">
-            <div class="mx-auto max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-              <h2 class="text-8xl font-bold font-roboto  bg-th-background text-stone-700">
+            <div class="mx-auto max-w-lg text-center ltr:sm:text-left rtl:sm:text-right">
+              <motion.h2
+                class="text-8xl font-bold font-roboto mt-12 bg-th-background "
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+              >
                 Insight Makers{" "}
-              </h2>
+              </motion.h2>
 
-              <p class="hidden  md:mt-4 font-roboto md:block">
+              <motion.p
+                class="hidden  mt-5 font-roboto md:block"
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+              >
                 Maker, Builder and Hands-on Materials learning for all ages!
-              </p>
-              <p class="hidden  md:mt-1 font-roboto md:block">
+              </motion.p>
+
+              <motion.p
+                class="hidden  mt-3 font-roboto md:block"
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+              >
                 We offer Maker Kits using Recycled Materials, Maker Classes for
                 local Libraries & Schools, and Maker Events for Organizations of
                 all kinds.
-              </p>
-              <p class="hidden  md:mt-1 font-roboto md:block">
-                In addition we provide Adult Education in Home Maintenance and
-                Trade Skills, and
-              </p>
+              </motion.p>
 
-              <div class="mt-4 md:mt-8">
+              <motion.p
+                class="hidden  mt-3 font-roboto md:block"
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+              >
+                We also provide Adult Education Classes in home maintenance and
+                trade skills. Our goal is to empower people, no matter what age,
+                background, or goal.
+              </motion.p>
+
+              <motion.div
+                class="mt-4 md:mt-8"
+                variants={variants}
+                initial="hidden"
+                animate="visible"
+              >
                 <a
                   href="#"
-                  class="inline-block rounded bg-tomato-300 px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
+                  class="inline-block rounded-lg bg-th-primary-dark px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
                   Build With Us
                 </a>
-              </div>
+              </motion.div>
             </div>
           </div>
         </section>
@@ -72,7 +118,7 @@ export default function IndexPage() {
 
                   <a
                     href="#"
-                    class="mt-8 inline-block rounded border bg-yale_blue-500 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
+                    class="mt-8 inline-block rounded border bg-th-primary-dark px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-indigo-600 focus:outline-none focus:ring active:text-indigo-500"
                   >
                     Get in Touch
                   </a>
