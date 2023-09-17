@@ -12,18 +12,18 @@
 
   --primary-dark: theme("colors.tomato.400");
   --primary-medium: theme("colors.brown.100"); /* Top Bar * Switch */
-  --primary-light: theme("colors.browny.900");
+  --primary-light: theme("colors.black");
 }
 
 [data-theme="dark"] {
-  --background: theme("colors.stone.600");
-  --background-secondary: theme("colors.stone.600");
+  --background: theme("colors.darkblue");
+  --background-secondary: theme("colors.darkblue");
 
   --accent-dark: theme("colors.tan"); /* Bottom Bar */
   --accent-medium: theme("colors.tomato.300"); /* Middle Bar */
   --accent-light: theme("colors.tan");
 
-  --primary-dark: theme("colors.sandy_brown.600");
-  --primary-medium: theme("colors.stone.500"); /* Top Bar & Switch */
+  --primary-dark: theme("colors.tangerine");
+  --primary-medium: theme("colors.sky.900"); /* Top Bar & Switch */
   --primary-light: theme("colors.white");
 }

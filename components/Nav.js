@@ -16,8 +16,8 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed w-full z-50">
-      <div className="w-full absolute bg-th-background font-roboto h-24 md:h-28"></div>
-      <nav className=" h-24 md:h-28">
+      <div className="border-b-2 border-th-primary-light  w-full absolute bg-th-background font-roboto h-24 md:h-28"></div>
+      <nav className="">
         <div>
           <div class=" max-w-screen-lg mx-auto relative  flex justify-between pt-6 md:pt-10 items-center">
             <a
@@ -45,7 +45,7 @@ function Nav() {
                 </svg>
               </div>
               <div className="hidden md:flex md:flex-col">
-                <h1 className=" mt-1.5 text-th-accent-dark text-2xl md:text-5x1 lg:text-2xl">
+                <h1 className=" mt-1.5 text-th-primary-light text-2xl md:text-5x1 lg:text-2xl">
                   Insight|Makers
                 </h1>
                 <div className="flex">
@@ -141,8 +141,8 @@ function Nav() {
         >
           {(ref) => (
             <div class="relative z-50">
-              <div class="fixed inset-0 bg-th-background opacity-25"></div>
-              <div class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-r overflow-y-auto">
+              <div class="fixed inset-0 bg-th-primary-light overscroll-contain opacity-50 z-30"></div>
+              <div class="fixed top-0 left-0 bottom-0 flex overscroll-contain flex-col w-5/6 z-40 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-r-2 border-th-primary-light ">
                 <div class="flex justify-between mb-6 mx-2">
                   <a href="/" className="text-lg font-normal rounded-lg   ">
                     <h1 className="absolute text-3xl pt-6 font-semibold  md:text-3x1 lg:text-4xl">
