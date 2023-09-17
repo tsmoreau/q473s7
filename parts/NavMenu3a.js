@@ -4,19 +4,20 @@ import { Fragment, useRef } from "react";
 
 const solutions = [
   {
-    name: "Maker Events, Classes & Kits",
+    name: "Maker Events, Classes, & Kits",
     description: "Measure actions your users take",
     href: "##",
     icon: IconOne,
   },
   {
-    name: "Waste-to-Wonder Pop-Ups",
-    description: "Create your own targeted content",
+    name: "Trade Skill Basics Classes",
+    description: "Measure actions your users take",
     href: "##",
-    icon: IconTwo,
+    icon: IconOne,
   },
+
   {
-    name: "Events for Schools, Businesses & More",
+    name: "Resources for Schools, Businesses, & More",
     description: "Keep track of your growth",
     href: "##",
     icon: IconThree,
@@ -64,32 +65,32 @@ export default function Example() {
                   onMouseEnter={onMouseEnter.bind(null, open)}
                   onMouseLeave={onMouseLeave.bind(null, open)}
                 >
-                  <span>Make With Us</span>
+                  <span className="">Make With Us</span>
                 </Popover.Button>
                 <Transition
                   as={Fragment}
-                  enter="transition ease-out duration-200"
+                  enter="transition ease-out duration-100"
                   enterFrom="opacity-0 translate-y-1"
                   enterTo="opacity-100 translate-y-0"
-                  leave="transition ease-in duration-150"
+                  leave="transition ease-in duration-100"
                   leaveFrom="opacity-100 translate-y-0"
                   leaveTo="opacity-0 translate-y-1"
                 >
-                  <Popover.Panel className="absolute z-10 w-max px-4 mt-0 transform -translate-x-1/2 left-1/2 sm:px-0">
+                  <Popover.Panel className="absolute z-10 w-max px-5 mt-0 transform -translate-x-1/2 left-1/4 sm:px-0">
                     <div
-                      className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
+                      className="overflow-hidden  shadow-lg shadow-white  "
                       onMouseEnter={onMouseEnter.bind(null, open)}
                       onMouseLeave={onMouseLeave.bind(null, open)}
                     >
-                      <div className="relative grid gap-8 bg-white p-7 lg:grid-cols-1">
+                      <div className="relative grid gap-8 border-2 border-th-primary-light border-dashed bg-th-background p-6 lg:grid-cols-1">
                         {solutions.map((item) => (
                           <a
                             key={item.name}
                             href={item.href}
-                            className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:bg-gray-50 focus:outline-none focus-visible:ring focus-visible:ring-orange-500 focus-visible:ring-opacity-50"
+                            className="flex items-center p-2 -m-3 transition duration-150 ease-in-out rounded-lg hover:text-white hover:bg-th-primary-dark focus:outline-none "
                           >
                             <div className="mx-4">
-                              <p className="text-sm font-medium text-gray-900">
+                              <p className="text-sm font-medium ">
                                 {item.name}
                               </p>
                             </div>

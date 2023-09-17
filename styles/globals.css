@@ -11,7 +11,7 @@
   --accent-light: theme("colors.slate.800");
 
   --primary-dark: theme("colors.tomato.400");
-  --primary-medium: theme("colors.brown.100"); /* Top Bar * Switch */
+  --primary-medium: theme("colors.tan"); /* Top Bar * Switch */
   --primary-light: theme("colors.black");
 }
 
@@ -24,6 +24,6 @@
   --accent-light: theme("colors.tan");
 
   --primary-dark: theme("colors.tangerine");
-  --primary-medium: theme("colors.sky.900"); /* Top Bar & Switch */
+  --primary-medium: theme("colors.darkblue"); /* Top Bar & Switch */
   --primary-light: theme("colors.white");
 }

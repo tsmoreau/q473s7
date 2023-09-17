@@ -78,7 +78,7 @@ module.exports = {
         richblue: "#068DA9",
         darkblue: "#02639c",
         chedder: "#FFB703",
-        tangerine: "#f5aa14",
+        tangerine: "#faa702",
         darkgray: "#3F4E4F",
         darkergray: "#2C3639",
         darkgreen: "#346751",

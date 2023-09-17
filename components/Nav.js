@@ -16,15 +16,15 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed w-full z-50">
-      <div className="border-b-2 border-th-primary-light  w-full absolute bg-th-background font-roboto h-24 md:h-28"></div>
+      <div className="border-b-2 border-dashed border-th-primary-light  w-full absolute bg-th-background font-roboto h-24 md:h-28"></div>
       <nav className="">
         <div>
-          <div class=" max-w-screen-lg mx-auto relative  flex justify-between pt-6 md:pt-10 items-center">
+          <div class=" max-w-screen-xl mx-auto relative  flex justify-between pt-6 md:pt-10 items-center">
             <a
               href="/"
               className="flex text-lg font-semibold rounded-lg tracking-wide "
             >
-              <div className="transform -translate-y-2 ml-8">
+              <div className="transform -translate-y-2 ml-8 lg:ml-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1224 1116"
@@ -62,9 +62,6 @@ function Nav() {
             <ul class=" hidden absolute -mt-1 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
               <li>
                 <Nav1a />
-              </li>
-              <li className="hidden">
-                <Nav1 />
               </li>
               <li>
                 <Nav2a />
@@ -142,8 +139,8 @@ function Nav() {
           {(ref) => (
             <div class="relative z-50">
               <div class="fixed inset-0 bg-th-primary-light overscroll-contain opacity-50 z-30"></div>
-              <div class="fixed top-0 left-0 bottom-0 flex overscroll-contain flex-col w-5/6 z-40 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-r-2 border-th-primary-light ">
-                <div class="flex justify-between mb-6 mx-2">
+              <div class="fixed top-0 left-0 bottom-0 flex overscroll-contain flex-col w-5/6 z-40 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-dashed border-r-2 border-th-primary-light ">
+                <div class="flex justify-between mb-6 mx-2 overscroll-contain">
                   <a href="/" className="text-lg font-normal rounded-lg   ">
                     <h1 className="absolute text-3xl pt-6 font-semibold  md:text-3x1 lg:text-4xl">
                       Insight|Makers
@@ -178,36 +175,31 @@ function Nav() {
                   <ul className="mx-2 mt-5">
                     <li class="mb-3">
                       <Disclosure>
-                        <Disclosure.Button className="mb-2 py-2 pl-3 w-full text-left rounded-lg hover:bg-th-primary-medium">
+                        <Disclosure.Button className="mb-2 py-2 pl-2 w-full text-left rounded-lg hover:bg-th-primary-medium">
                           About Us
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-5 py-1 pl-2">
-                          <span></span>
-                          Staff & Board
-                        </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-5 py-1 pl-2">
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Our Mission
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-5 py-1 pl-2">
-                          Our Staff & Partners
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          <span></span>
+                          Staff & Board
                         </Disclosure.Panel>
                       </Disclosure>
                     </li>
                     <li class="mb-3 mt-2">
                       <Disclosure>
-                        <Disclosure.Button className="mb-2 py-2 pl-3 w-full text-left rounded-lg hover:bg-th-primary-medium">
+                        <Disclosure.Button className="mb-2 py-2 pl-2 w-full text-left rounded-lg hover:bg-th-primary-medium">
                           What We Do
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-sm  pl-2 pt-2">
-                          Maker & Trade Skills Education
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          Youth STEM & Maker Education
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm  pl-2 ">
-                          STEAM & Sustainability Education
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          Adult Trade Skills Education
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm  pl-2">
-                          Plastics Recycling & Production
-                        </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm  pl-2 pb-2">
+
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Social Equity Advocacy
                         </Disclosure.Panel>
                       </Disclosure>
@@ -215,17 +207,17 @@ function Nav() {
 
                     <li class="mb-3 mt-2">
                       <Disclosure>
-                        <Disclosure.Button className="mb-2 py-2 pl-3 w-full text-left rounded-lg hover:bg-th-primary-medium">
+                        <Disclosure.Button className="mb-2 py-2 pl-2 w-full text-left rounded-lg hover:bg-th-primary-medium">
                           Make With Us
                         </Disclosure.Button>
-                        <Disclosure.Panel className="text-sm  pl-2 pt-2">
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Maker Events, Classes & Kits
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm  pl-2 ">
-                          Waste-To-Wonder Pop-Ups
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          Trade Skill Basics Classes
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm  pl-2 pb-2">
-                          Events for Schools, Businesses & More
+                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          Resources for Schools, Libraries & More
                         </Disclosure.Panel>
                       </Disclosure>
                     </li>

@@ -87,7 +87,7 @@ export default function IndexPage() {
           </div>
         </section>
 
-        <section className="w-full bg-th-primary-medium">
+        <section className="w-full bg-th-primary-medium border-t-2 border-th-primary-light border-dashed">
           <div class="bg-th-primary-medium mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:h-screen lg:grid-cols-2">
               <div class="relative z-10 lg:py-16">
