@@ -16,15 +16,15 @@ function Nav() {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="fixed w-full z-50">
-      <div className="border-b-2 border-dashed border-th-primary-light  w-full absolute bg-th-background font-roboto h-24 md:h-28"></div>
+      <div className="border-b-2 border-dashed border-th-primary-light  w-full absolute bg-th-background font-roboto h-24 "></div>
       <nav className="">
         <div>
-          <div class=" max-w-screen-xl mx-auto relative  flex justify-between pt-6 md:pt-10 items-center">
+          <div class=" max-w-screen-xl mx-auto relative  flex justify-between pt-6  items-center">
             <a
               href="/"
               className="flex text-lg font-semibold rounded-lg tracking-wide "
             >
-              <div className="transform -translate-y-2 ml-8 lg:ml-0">
+              <div className="transform -translate-y-2 ml-8 md:ml-6 lg:ml-4 xl:ml-0">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 1224 1116"
@@ -59,7 +59,7 @@ function Nav() {
               </div>
             </a>
 
-            <ul class=" hidden absolute -mt-1 right-10 md:right-5 lg:right-0 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
+            <ul class=" hidden absolute -mt-1 right-8 md:right-4 lg:right-2 xl:right-0 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto space-x-4">
               <li>
                 <Nav1a />
               </li>
@@ -79,10 +79,8 @@ function Nav() {
                 <ThemeToggle />
               </li>
             </ul>
-            <div class="hidden absolute top-1/2 -right-10 px-2 transform -translate-y-1/2 -translate-x-1/4 lg:flex lg:mx-auto lg:flex lg:items-center lg:w-auto "></div>
-            <div class="lg:hidden flex ">
-              <div className="mr-2 "> </div>
 
+            <div class="lg:hidden flex ">
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
@@ -137,11 +135,11 @@ function Nav() {
           leaveTo="opacity-0"
         >
           {(ref) => (
-            <div class="relative z-50">
+            <div className="relative z-50">
               <div class="fixed inset-0 bg-th-primary-light overscroll-contain opacity-50 z-30"></div>
               <div class="fixed top-0 left-0 bottom-0 flex overscroll-contain flex-col w-5/6 z-40 max-w-sm pt-4 pr-4 pl-4 bg-th-background border-dashed border-r-2 border-th-primary-light ">
                 <div class="flex justify-between mb-6 mx-2 overscroll-contain">
-                  <a href="/" className="text-lg font-normal rounded-lg   ">
+                  <a href="/" className=" ">
                     <h1 className="absolute text-3xl pt-6 font-semibold  md:text-3x1 lg:text-4xl">
                       Insight|Makers
                     </h1>

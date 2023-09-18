@@ -6,14 +6,15 @@ const solutions = [
   {
     name: "Our Mission",
     description: "Create your own targeted content",
-    href: "##",
+    href: "/about#mission",
+    class: "anchor-offset",
     icon: IconTwo,
   },
 
   {
-    name: "Staff & Board",
+    name: "Our Team",
     description: "Measure actions your users take",
-    href: "##",
+    href: "/about#team",
     icon: IconOne,
   },
 ];

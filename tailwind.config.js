@@ -5,6 +5,13 @@ module.exports = {
   darkMode: "class",
   theme: {
     extend: {
+      ".anchor": {
+        scrollPaddingTop: "-300px",
+      },
+      // Add a new custom class for anchor links
+      ".anchor-offset": {
+        scrollPaddingTop: "30px",
+      },
       fontFamily: {
         roboto: ["var(--font-roboto_slab)"],
       },
