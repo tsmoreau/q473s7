@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div class="font-roboto w-full flex justify-center border-t-2 border-th-primary-light border-dashed">
+    <div class="font-roboto w-full flex justify-center border-t-0 border-th-primary-light border-dashed">
       <footer class="w-11/12 md:w-9/12  relative pt-16 pb-6">
         <div className="flex flex-col lg:flex-row items-center justify-center pb-8  pt-6">
           <div className="w-96 transform -translate-y-2 flex flex-col items-center lg:items-baseline">

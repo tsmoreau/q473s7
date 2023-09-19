@@ -63,7 +63,7 @@ function Nav() {
               <li>
                 <Nav1a />
               </li>
-              <li>
+              <li className="hidden">
                 <Nav2a />
               </li>
               <li>
@@ -181,11 +181,11 @@ function Nav() {
                         </Disclosure.Panel>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           <span></span>
-                          Staff & Board
+                          Our Team
                         </Disclosure.Panel>
                       </Disclosure>
                     </li>
-                    <li class="mb-3 mt-2">
+                    <li class="mb-3 hidden mt-2">
                       <Disclosure>
                         <Disclosure.Button className="mb-2 py-2 pl-2 w-full text-left rounded-lg hover:bg-th-primary-medium">
                           What We Do
@@ -214,7 +214,7 @@ function Nav() {
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Trade Skill Basics Classes
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                        <Disclosure.Panel className="hidden text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Resources for Schools, Libraries & More
                         </Disclosure.Panel>
                       </Disclosure>

@@ -15,13 +15,6 @@ const solutions = [
     href: "##",
     icon: IconOne,
   },
-
-  {
-    name: "Resources for Schools, Businesses, & More",
-    description: "Keep track of your growth",
-    href: "##",
-    icon: IconThree,
-  },
 ];
 
 export default function Example() {

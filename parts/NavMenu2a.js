@@ -15,13 +15,6 @@ const solutions = [
     href: "##",
     icon: IconTwo,
   },
-
-  {
-    name: "Social Equity Advocacy",
-    description: "Keep track of your growth",
-    href: "##",
-    icon: IconThree,
-  },
 ];
 
 export default function Example() {
