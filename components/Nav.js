@@ -177,11 +177,11 @@ function Nav() {
                           About Us
                         </Disclosure.Button>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          Our Mission
+                          <a href="/about#mission">Our Mission</a>
                         </Disclosure.Panel>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           <span></span>
-                          Our Team
+                          <a href="/about#team">Our Team</a>
                         </Disclosure.Panel>
                       </Disclosure>
                     </li>
@@ -209,10 +209,10 @@ function Nav() {
                           Make With Us
                         </Disclosure.Button>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          Maker Events, Classes & Kits
+                          <a href="/make">Maker Events, Classes & Kits</a>
                         </Disclosure.Panel>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          Trade Skill Basics Classes
+                          <a href="/trade"> Trade Skill Basics Classes</a>
                         </Disclosure.Panel>
                         <Disclosure.Panel className="hidden text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
                           Resources for Schools, Libraries & More

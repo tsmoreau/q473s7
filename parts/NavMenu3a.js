@@ -6,13 +6,13 @@ const solutions = [
   {
     name: "Maker Events, Classes, & Kits",
     description: "Measure actions your users take",
-    href: "##",
+    href: "/make",
     icon: IconOne,
   },
   {
     name: "Trade Skill Basics Classes",
     description: "Measure actions your users take",
-    href: "##",
+    href: "/trade",
     icon: IconOne,
   },
 ];
