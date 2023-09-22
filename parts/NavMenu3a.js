@@ -4,13 +4,19 @@ import { Fragment, useRef } from "react";
 
 const solutions = [
   {
-    name: "Maker Events, Classes, & Kits",
+    name: "Maker Program",
     description: "Measure actions your users take",
     href: "/make",
     icon: IconOne,
   },
   {
-    name: "Trade Skill Basics Classes",
+    name: "Trade Skills Program",
+    description: "Measure actions your users take",
+    href: "/trade",
+    icon: IconOne,
+  },
+  {
+    name: "Events Calendar",
     description: "Measure actions your users take",
     href: "/trade",
     icon: IconOne,

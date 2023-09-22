@@ -45,7 +45,7 @@ export default function IndexPage() {
                 initial="hidden"
                 animate="visible"
               >
-                Maker, Builder and Hands-on Materials learning for all ages!
+                Maker, Trade Skill and Hands-On Materials Learning for All Ages!
               </motion.p>
 
               <motion.p
@@ -80,7 +80,7 @@ export default function IndexPage() {
                   href="#"
                   class="inline-block rounded-lg bg-th-primary-dark px-12 py-3 text-sm font-medium text-white transition hover:bg-tomato-100 focus:outline-none focus:ring focus:ring-yellow-400"
                 >
-                  Build With Us
+                  Make With Us
                 </a>
               </motion.div>
             </div>

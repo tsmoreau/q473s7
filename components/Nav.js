@@ -209,13 +209,13 @@ function Nav() {
                           Make With Us
                         </Disclosure.Button>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          <a href="/make">Maker Events, Classes & Kits</a>
+                          <a href="/make">Maker Program</a>
                         </Disclosure.Panel>
                         <Disclosure.Panel className="text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          <a href="/trade"> Trade Skill Basics Classes</a>
+                          <a href="/trade"> Trade Skills Program</a>
                         </Disclosure.Panel>
-                        <Disclosure.Panel className="hidden text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
-                          Resources for Schools, Libraries & More
+                        <Disclosure.Panel className=" text-sm rounded-lg hover:bg-th-primary-medium pl-6 py-1">
+                          Events Calendar
                         </Disclosure.Panel>
                       </Disclosure>
                     </li>
