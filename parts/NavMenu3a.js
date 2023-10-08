@@ -18,7 +18,7 @@ const solutions = [
   {
     name: "Events Calendar",
     description: "Measure actions your users take",
-    href: "/trade",
+    href: "/calendar",
     icon: IconOne,
   },
 ];

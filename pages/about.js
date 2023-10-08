@@ -9,14 +9,16 @@ export default function AboutPage() {
       <div className="pt-40 md:pt-48 "></div>
       <div
         id="mission"
-        className="mb-0.5  text-6xl tracking-tight text-center   w-full"
+        className="mb-0.5  text-6xl xl:text-7xl tracking-tight text-center   w-full"
       >
         About Us
       </div>
       <div className="border-2 border-dashed border-th-primary-light w-11/12 md:w-10/12 lg:w-9/12 xl:w-8/12 mb-12">
         <div className="flex flex-col items-center ">
-          <div className="text-3xl mt-12 ">Our Mission</div>
-          <div className=" flex w-11/12 flex-col  text-base text-center px-4 pb-4 md:px-8   border-dashed border-th-primary-light flex justify-center">
+          <div className="text-2xl lg:text-3xl xl:text-4xl mt-16 xl:pb-6">
+            Our Mission
+          </div>
+          <div className=" flex w-11/12 lg:w-10/12 xl:w-8/12 flex-col  lg:text-base xl:text-xl text-center px-4 pb-4 md:px-8   border-dashed border-th-primary-light flex justify-center">
             <p className="py-1">
               Our mission is to empower people of all ages and backgrounds to
               learn and apply STEM, Maker, and Trade skills together and with
